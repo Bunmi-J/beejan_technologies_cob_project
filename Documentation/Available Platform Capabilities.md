@@ -16,7 +16,20 @@
 
 **Security Group** is a virtual stateful firewall attached to COB EC2, ECS, and RDS. The security group allows you to define inbound and outbound rules, and enforces them.
 
-**VPC Diagram**Add 
+**VPC Diagram**
+
+
+<img width="431" height="299" alt="image" src="https://github.com/user-attachments/assets/de148c7d-cab9-4d04-85b7-8613c691e096" />
+
+### VPC Resource Map with Elastic IP and NAT Gateway enabled
+
+<img width="613" height="285" alt="image" src="https://github.com/user-attachments/assets/2315d363-de0e-47e4-9741-27361cb7326d" />
+
+### VPC Resource Map without NAT Gateway enabled
+
+<img width="612" height="222" alt="image" src="https://github.com/user-attachments/assets/d45cf3df-735b-4a57-9d55-642dcdd8fce6" />
+
+
 
 # Identity and Access 
 
@@ -39,6 +52,9 @@ The IAM module contains roles and policy documents for EC2, ECS, Glue, and Athen
 **EC2 instance profile** acts as a bridge for the EC2 instance. The instance profile wraps the role so the EC2 instance can use it and allows applications running on an EC2 instance to get temporary security credentials from the instance metadata service. 
 
 **Example of IAM Module diagram showing Data Engineering Role Access**
+
+<img width="521" height="357" alt="image" src="https://github.com/user-attachments/assets/790ddb3b-e749-408d-ae67-2bd45a4a5516" />
+
 
 ---
 
@@ -86,7 +102,10 @@ In order to provide a RDS with reuseability capability and operational effiecien
 
 **CIDR block** "10.0.4.0/24" &  "10.0.5.0/24" in each isolated subnet is large enough to accommodate spare IP addresses for the RDS to use during maintenance activities, like failover. The analytical team can connect to the RDS instance using the hostname endpoint. 
 
-**ADdd RDS Diagram**
+**RDS Diagram**
+
+<img width="283" height="317" alt="image" src="https://github.com/user-attachments/assets/e4aadd4c-3099-4c2f-802d-13267bda1baa" />
+
 
 ---
 
