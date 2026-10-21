@@ -9,7 +9,7 @@ output "vpc_cidr" {
 
 output "private_subnet_cidrs" {
   description = "CIDR block of the VPC"
-  value = module.cob_vpc.private_subnet_cidrs
+  value       = module.cob_vpc.private_subnet_cidrs
 }
 
 
@@ -67,8 +67,8 @@ output "ecs_execution_role_arn" {
 
 
 output "ecs_security_group_id" {
-    description = "ecs security group id allowed to connect to postgresql referenced by ingress_rule"
-    value = module.cob_ecs.ecs_security_group_id
+  description = "ecs security group id allowed to connect to postgresql referenced by ingress_rule"
+  value       = module.cob_ecs.ecs_security_group_id
 }
 
 output "s3-ids" {
@@ -112,13 +112,13 @@ output "cob_rds_database_name" {
 }
 
 output "glue_role_arn" {
-    description = "Amazon resource name of the glue role"
-    value = module.cob_iam.glue_role_arn
+  description = "Amazon resource name of the glue role"
+  value       = module.cob_iam.glue_role_arn
 }
 
 output "catalog_database_name" {
-    description = "Name of the catalog database name"
-    value = module.cob_glue.catalog_database_name
+  description = "Name of the catalog database name"
+  value       = module.cob_glue.catalog_database_name
 }
 
 

@@ -4,7 +4,7 @@ variable "aws_region" {
 
 variable "availability_zones" {
   description = "Availability Zones to place the subnets in"
-  type = list(string)
+  type        = list(string)
   default = [
     "eu-north-1a",
     "eu-north-1b"
@@ -30,5 +30,5 @@ variable "rds_password" {
 
 variable "athena_user" {
   description = "List of IAM users that can access the Athena"
-  type = list(string)
+  type        = list(string)
 }

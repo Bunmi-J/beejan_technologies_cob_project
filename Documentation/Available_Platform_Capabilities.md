@@ -1,6 +1,6 @@
 # Available Platform Capabilities
 ## Networking - VPC Components And Subnets
- * **COB VPC module** is responsible for creating networking resources. The module provisions a standard AWS network foundation that can be used by Beejan technologies Engineering workloads. It implements the industry standard three tier architecture across two availability zones with three types of subnets, the public, private, and isolated subnets.  It also provision default security group and ACL for the subnets
+ * **COB VPC module** is responsible for creating networking resources. The module provisions a standard AWS network foundation that can be used by Beejan technologies Engineering workloads. It implements the industry standard three tier architecture across two availability zones with three types of subnets, the public, private, and isolated subnets.  It also provisions default security group and ACL for the subnets
 
 * **The public subnet** has direct access to the internet through the internet gateway. Therefore, resources in the public subnet have direct access to the internet. The auto assign IP address is enabled so resources in the public subnet can be reachable. The design and implementation of NAT gateway also enhances cost efficient architecture with the option to enable/disable NAT gateway/elastic IP address. 
 
